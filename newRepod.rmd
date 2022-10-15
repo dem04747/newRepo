@@ -38,7 +38,7 @@ Note that including  `echo = FALSE`  to the code chunk  '{r, echo =FALSE}' preve
 
 ```{r}
 library(ggplot2)
-summary(mpg)
+mpg
 
 ```
 ```{r}
