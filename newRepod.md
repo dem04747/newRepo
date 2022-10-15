@@ -47,6 +47,21 @@ summary(mtcars)
 ## Including Plots
 
 
+
+You can also embed plots, for example:
+
+
+```r
+library(ggplot2)
+ggplot(data=mtcars)+
+  geom_point(mapping = aes(x = mpg, y = wt))
+```
+
+![](newRepod_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+
+Note that including  `echo = FALSE`  to the code chunk  '{r, echo =FALSE}' prevents printing of the R code that generated the plot.
+
+
 ```r
 library(ggplot2)
 summary(mpg)
@@ -75,20 +90,6 @@ summary(mpg)
 ##  3rd Qu.:27.00                                        
 ##  Max.   :44.00
 ```
-
-You can also embed plots, for example:
-
-
-```r
-library(ggplot2)
-ggplot(data=mtcars)+
-  geom_point(mapping = aes(x = mpg, y = wt))
-```
-
-![](newRepod_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
 
 ```r
 library(ggplot2)
